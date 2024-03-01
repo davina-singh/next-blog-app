@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <div>
         <p onClick={() => setCount(count + 1)}>{count}</p>
-        <p>&copy;Made by Davina</p>
+        <p className="font-bold text-lg">&copy;Made by Davina</p>
       </div>
     </footer>
   );

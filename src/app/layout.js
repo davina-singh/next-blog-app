@@ -1,7 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Footer from "@/app/components/Footer";
-import Link from "next/link";
+// import Link from "next/link";
+import Nav from "@/app/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,11 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Link href="/posts/new"> Add a new post </Link>
-        <br></br>
-        <Link href="/posts"> View all posts </Link>
+        <Nav />
         {children}
-        <Footer />
+        <Footer className="font-bold" />
       </body>
     </html>
   );
