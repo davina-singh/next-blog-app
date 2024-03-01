@@ -17,7 +17,7 @@ export default async function PostsPage() {
       <h4>and sort by ascending or descending order</h4> */}
       <ul className="flex flex-wrap">
         {posts.rows.map((post) => (
-          <li className="m-7 border-4 w-96 " key={post.id}>
+          <li className="m-7 border-4 w-96" key={post.id}>
             <h5 className="font-bold">{post.title}</h5>
             <Link
               className="text-decoration-line: underline"
