@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { UserButton } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
+import { auth } from "@clerk/nextjs";
 
 export default function Nav() {
+  const { userId } = auth();
   return (
-    <div>
+    <nav>
       <ul className="flex flex-row p-3 text-decoration-line: underline font-bold text-base">
         <li className="m-4">
           <Link href="/">Home</Link>
@@ -13,18 +17,10 @@ export default function Nav() {
         <li className="m-4">
           <Link href="/posts/new">Add a new post</Link>
         </li>
+        <li className="flex-end">
+          {userId ? <UserButton /> : <SignInButton />}
+        </li>
       </ul>
-    </div>
+    </nav>
   );
-}
-
-{
-  /* <nav className="flex text-decoration-line: underline">
-<Link className="pr-10" href="/posts/new">
-  Add a new post
-</Link>
-<Link className="pr-10" href="/posts">
-  View all posts
-</Link>
-</nav> */
 }

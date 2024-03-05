@@ -1,8 +1,8 @@
 import { sql } from "@vercel/postgres";
 import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
-
 import SubmitButton from "@/app/components/SubmitButton";
+import { notFound } from "next/navigation";
 
 export default async function PostPage({ params }) {
   // displays information related to specific post id from posts table
@@ -10,6 +10,9 @@ export default async function PostPage({ params }) {
     await sql`
   SELECT * FROM posts WHERE post_id = ${params.id}`
   ).rows[0];
+  if (!post) {
+    notFound();
+  }
   // displays the category related to the post
   const category = (
     await sql`SELECT category FROM categories WHERE category_id = ${post.category_id}`
