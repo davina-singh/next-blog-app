@@ -5,6 +5,8 @@ Sign in (with Clerk) to:
 
 PG database deleted - now local/ deployed does not work 
 
+# Week 8 - Blog (or some such thing) with a Comments Form
+
 User Stories:
 - 🐿️ As a user, I want to browse a list of posts, sortable by ascending or descending order
 - 🐿️ As a user, I want to see a list of categories, and click on a category to see a list of posts in that category
