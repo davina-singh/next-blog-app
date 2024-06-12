@@ -2,8 +2,7 @@ View all blog posts (with category and content) and
 Sign in (with Clerk) to:
   - Make a new blog post - title, content and category and,
   - Add a comment to a blog post - view this (alongside other comments)
-
-PG database deleted - now local/ deployed does not work 
+  - PG database deleted - now local/ deployed does not work)
 
 # Week 8 - Blog (or some such thing) with a Comments Form
 
