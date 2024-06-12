@@ -4,7 +4,7 @@ Sign in (with Clerk) to:
   - Add a comment to a blog post - view this (alongside other comments)
   - PG database deleted - now local/ deployed does not work)
 
-# Week 8 - Blog (or some such thing) with a Comments Form
+# Week 8 Assignment - Blog (or some such thing) with a Comments Form
 
 User Stories:
 - 🐿️ As a user, I want to browse a list of posts, sortable by ascending or descending order
