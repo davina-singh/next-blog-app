@@ -1,3 +1,5 @@
+Works locally but not deployed
+
 View all blog posts (with category and content) and
 Sign in (with Clerk) to:
   - Make a new blog post - title, content and category and,
